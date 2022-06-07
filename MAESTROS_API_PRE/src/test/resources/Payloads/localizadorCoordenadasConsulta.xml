@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ejb="http://ejb.mauo.correos.es">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <ejb:localizadorCoordenadasConsulta>
+         <ejb:nLatitud>38.99709435985</ejb:nLatitud>
+         <ejb:nLongitud>1.4281918009</ejb:nLongitud>
+         <!--Optional:-->
+         <ejb:sistemaReferencia>4258</ejb:sistemaReferencia>
+         <!--Optional:-->
+         <ejb:nMaxCentrosCorreos>10</ejb:nMaxCentrosCorreos>
+         <!--Optional:-->
+         <ejb:nMaxDistanciaKm>20</ejb:nMaxDistanciaKm>
+      </ejb:localizadorCoordenadasConsulta>
+   </soapenv:Body>
+</soapenv:Envelope>

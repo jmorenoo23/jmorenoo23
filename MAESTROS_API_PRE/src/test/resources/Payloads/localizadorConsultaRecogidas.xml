@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rec="http://recogidas.ejb.mauo.correos.es">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rec:filtroUnidadRecogida>
+         <rec:codPostal>28042</rec:codPostal>
+         <rec:fechaSolicitud>02/02/2020 18:02</rec:fechaSolicitud>
+         <rec:fechaRecogida>05/10/2020 13:59</rec:fechaRecogida>
+         <rec:peso>0</rec:peso>
+         <rec:pesoVolumetrico>500</rec:pesoVolumetrico>
+         <rec:tipo>OE</rec:tipo>
+      </rec:filtroUnidadRecogida>
+   </soapenv:Body>
+</soapenv:Envelope>

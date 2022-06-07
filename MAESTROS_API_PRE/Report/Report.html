@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Regresion - MAESTROS</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">
+<img src='Report/Images//logo.jpg' />
+</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">abr 25, 2022 09:51:25 p. m.</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">API TEST</p>
+            <p class="text-sm">
+              <span>21:51:26</span> / <span>00:00:04:340</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">API TEST</h5>
+<span class='badge badge-success'>04.25.2022 21:51:26</span>
+<span class='badge badge-danger'>04.25.2022 21:51:30</span>
+<span class='badge badge-default'>00:00:04:340</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Prueba GET al endpoint.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.APISteps.sendGetRequest(java.lang.String)">
+                <span>Given Mandar un GET request a http://maestroupre.correos.es/MaestroAdaptadorRouter URI</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.APISteps.expectedStatusCode(int,java.lang.String)">
+                <span>When Tengo un status code de 200 en el /services/Localizador</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.APISteps.showMe(java.lang.String)">
+                <span>* Muestrame la respuesta de /services/Localizador endpoint</span>
+      <div>Response Body is: <h2>{http://ejb.mauo.correos.es}Localizador</h2>
+<h3>Hi there, this is a Web service!</h3>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.APISteps.POSTBody(java.lang.String,java.lang.String)">
+                <span>* POST con body POST en /services/Localizador endpoint</span>
+      <div>Response Body is: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Header/><soapenv:Body><homePaqOficinaRespuesta xmlns="http://ejb.mauo.correos.es"><listaHomePaqOficina><homePaqOficina><tipoUnidad>O</tipoUnidad><codUnidad>2863394</codUnidad><desUnidad>ALCOBENDAS SUC 1. P INDUSTRIAL VALPORTILLO</desUnidad><indAmbitoCodigo>N</indAmbitoCodigo><direccion>AV. VALPORTILLO, 7</direccion><CP>28108</CP><codLocalidad>2800600010100</codLocalidad><descLocalidad>ALCOBENDAS</descLocalidad><codProvincia>28</codProvincia><codHorario>NX</codHorario><desHorario>DE 08:30 A 14:30_SIN SERVICIO_SIN SERVICIO</desHorario><coorXETRS89>444614.7</coorXETRS89><coorYETRS89>4486925.0</coorYETRS89><coorXWGS84>-406754.7</coorXWGS84><coorYWGS84>4943440.0</coorYWGS84><latitudETRS89>40.531216</latitudETRS89><longitudETRS89>-3.6539397</longitudETRS89><latitudWGS84>40.531216</latitudWGS84><longitudWGS84>-3.6539397</longitudWGS84><telefonoOficina>916615666</telefonoOficina><acceso>S</acceso></homePaqOficina><homePaqOficina><tipoUnidad>O</tipoUnidad><codUnidad>2885794</codUnidad><desUnidad>MADRID SUC 81. LAS TABLAS</desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>CL capiscol 12</direccion><CP>28050</CP><codLocalidad>2807900010100</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>GS</codHorario><desHorario>DE 08:30 A 14:30 Y DE 16:30 A 20:00_SIN SERVICIO_SIN SERVICIO</desHorario><coorXETRS89>442822.34</coorXETRS89><coorYETRS89>4484333.0</coorYETRS89><coorXWGS84>-409084.22</coorXWGS84><coorYWGS84>4940002.5</coorYWGS84><latitudETRS89>40.507744</latitudETRS89><longitudETRS89>-3.6748662</longitudETRS89><latitudWGS84>40.507744</latitudWGS84><longitudWGS84>-3.6748662</longitudWGS84><telefonoOficina>914184011</telefonoOficina><acceso>S</acceso></homePaqOficina><homePaqOficina><tipoUnidad>O</tipoUnidad><codUnidad>2885894</codUnidad><desUnidad>MADRID SUC 74. EL CORTE INGL&#201;S SANCHINARRO</desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>MARGARITA DE PARMA, 1 (EL CORTE INGLES)</direccion><CP>28050</CP><codLocalidad>2807900010100</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>GW</codHorario><desHorario>DE 10:00 A 22:00_SIN SERVICIO_SIN SERVICIO</desHorario><coorXETRS89>444054.75</coorXETRS89><coorYETRS89>4483277.0</coorYETRS89><coorXWGS84>-407454.72</coorXWGS84><coorYWGS84>4938622.5</coorYWGS84><latitudETRS89>40.498318</latitudETRS89><longitudETRS89>-3.660228</longitudETRS89><latitudWGS84>40.498318</latitudWGS84><longitudWGS84>-3.660228</longitudWGS84><telefonoOficina>917502490</telefonoOficina><acceso>S</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>A0002763D</codUnidad><desUnidad>CENTRO CONCERTADO PIZARRALES</desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>CLDULCE CHACON29-35</direccion><CP>28050</CP><codLocalidad>2807900010100</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>1</codHorario><desHorario xsi:nil="true"/><coorXETRS89>443270.9</coorXETRS89><coorYETRS89>4481847.0</coorYETRS89><coorXWGS84>-408470.12</coorXWGS84><coorYWGS84>4936729.0</coorYWGS84><latitudETRS89>40.48538</latitudETRS89><longitudETRS89>-3.6693497</longitudETRS89><latitudWGS84>40.48538</latitudWGS84><longitudWGS84>-3.6693497</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>D</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>A0003392D</codUnidad><desUnidad>LEROY MERLIN CENTRO DE TRABAJO</desUnidad><indAmbitoCodigo>N</indAmbitoCodigo><direccion>AVVEGA (DE LA)2</direccion><CP>28108</CP><codLocalidad>2800600010100</codLocalidad><descLocalidad>ALCOBENDAS</descLocalidad><codProvincia>28</codProvincia><codHorario>1</codHorario><desHorario xsi:nil="true"/><coorXETRS89>447058.38</coorXETRS89><coorYETRS89>4487516.5</coorYETRS89><coorXWGS84>-403548.5</coorXWGS84><coorYWGS84>4944243.5</coorYWGS84><latitudETRS89>40.5367</latitudETRS89><longitudETRS89>-3.6251378</longitudETRS89><latitudWGS84>40.5367</latitudWGS84><longitudWGS84>-3.6251378</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>D</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>A0003443D</codUnidad><desUnidad>CASER SEGUROS CENTRO DE TRABAJO</desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>AVBURGOS109</direccion><CP>28050</CP><codLocalidad>2807900000000</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>1</codHorario><desHorario xsi:nil="true"/><coorXETRS89>443438.56</coorXETRS89><coorYETRS89>4483058.0</coorYETRS89><coorXWGS84>-408262.0</coorXWGS84><coorYWGS84>4938327.5</coorYWGS84><latitudETRS89>40.4963</latitudETRS89><longitudETRS89>-3.6674798</longitudETRS89><latitudWGS84>40.4963</latitudWGS84><longitudWGS84>-3.6674798</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>D</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>B0000008P</codUnidad><desUnidad>TELEFONICA DISTRITO T </desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>RDACOMUNICACIONSN</direccion><CP>28050</CP><codLocalidad>2807900010100</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>1</codHorario><desHorario>en horario de apertura</desHorario><coorXETRS89>443890.97</coorXETRS89><coorYETRS89>4485157.5</coorYETRS89><coorXWGS84>-407688.4</coorXWGS84><coorYWGS84>4941101.0</coorYWGS84><latitudETRS89>40.515244</latitudETRS89><longitudETRS89>-3.6623273</longitudETRS89><latitudWGS84>40.515244</latitudWGS84><longitudWGS84>-3.6623273</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>P</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>B0000052P</codUnidad><desUnidad>CORREOSLABS</desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>CLSIERRA DE ATAPUERCA13</direccion><CP>28050</CP><codLocalidad>2807900010100</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>0</codHorario><desHorario>24 horas</desHorario><coorXETRS89>443081.34</coorXETRS89><coorYETRS89>4483674.5</coorYETRS89><coorXWGS84>-408737.4</coorXWGS84><coorYWGS84>4939137.0</coorYWGS84><latitudETRS89>40.501827</latitudETRS89><longitudETRS89>-3.6717505</longitudETRS89><latitudWGS84>40.501827</latitudWGS84><longitudWGS84>-3.6717505</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>P</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>S0001019D</codUnidad><desUnidad>GALP</desUnidad><indAmbitoCodigo>S</indAmbitoCodigo><direccion>AVNICETO ALCALA ZAMORA20</direccion><CP>28050</CP><codLocalidad>2807900010100</codLocalidad><descLocalidad>MADRID</descLocalidad><codProvincia>28</codProvincia><codHorario>1</codHorario><desHorario>en horario de apertura</desHorario><coorXETRS89>445080.5</coorXETRS89><coorYETRS89>4482766.0</coorYETRS89><coorXWGS84>-406102.3</coorXWGS84><coorYWGS84>4937958.5</coorYWGS84><latitudETRS89>40.49378</latitudETRS89><longitudETRS89>-3.6480792</longitudETRS89><latitudWGS84>40.49378</latitudWGS84><longitudWGS84>-3.6480792</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>P</acceso></homePaqOficina><homePaqOficina><tipoUnidad>C</tipoUnidad><codUnidad>S9000092P</codUnidad><desUnidad>REALIA CENTRO DE TRABAJO</desUnidad><indAmbitoCodigo>N</indAmbitoCodigo><direccion>AVBRUSELAS (DE)36</direccion><CP>28108</CP><codLocalidad>2800600010100</codLocalidad><descLocalidad>ALCOBENDAS</descLocalidad><codProvincia>28</codProvincia><codHorario>1</codHorario><desHorario xsi:nil="true"/><coorXETRS89>445569.72</coorXETRS89><coorYETRS89>4486688.0</coorYETRS89><coorXWGS84>-405497.25</coorXWGS84><coorYWGS84>4943136.5</coorYWGS84><latitudETRS89>40.529144</latitudETRS89><longitudETRS89>-3.6426437</longitudETRS89><latitudWGS84>40.529144</latitudWGS84><longitudWGS84>-3.6426437</longitudWGS84><telefonoOficina xsi:nil="true"/><acceso>D</acceso></homePaqOficina><error xsi:type="xsd:int">0</error></listaHomePaqOficina></homePaqOficinaRespuesta></soapenv:Body></soapenv:Envelope>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Prueba GET al endpoint.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.APISteps.sendGetRequest(java.lang.String)">
+                <span>Given Mandar un GET request a http://maestroupre.correos.es/MaestroAdaptadorRouter URI</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.APISteps.expectedStatusCode(int,java.lang.String)">
+                <span>When Tengo un status code de 200 en el /services/Localizador</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.APISteps.showMe(java.lang.String)">
+                <span>* Muestrame la respuesta de /services/Localizador endpoint</span>
+      <div>Response Body is: <h2>{http://ejb.mauo.correos.es}Localizador</h2>
+<h3>Hi there, this is a Web service!</h3>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.APISteps.POSTBody(java.lang.String,java.lang.String)">
+                <span>* POST con body 2 en /services/Localizador endpoint</span>
+      <div>Response Body is: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Header/><soapenv:Body><homePaqRespuesta xmlns="http://ejb.mauo.correos.es"><listaHomePaq><homePaq><cod_homepaq>B0000013P</cod_homepaq><id_fabricante>16214496</id_fabricante><nom_fabricante>Keba</nom_fabricante><modelo>FS08</modelo><fec_instalacion>2015-11-03 00:00:00.0</fec_instalacion><fec_alta>2015-11-03 00:00:00.0</fec_alta><tipo_homepaq>P</tipo_homepaq><cod_estado>2</cod_estado><des_via>CARRETERA</des_via><direccion>M-40</direccion><numero>7,400</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2807900010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28042</cod_postal><num_modulos>7</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>24</num_ubi_pequeno><num_ubi_mediano>26</num_ubi_mediano><num_ubi_grande>4</num_ubi_grande><num_ubi_egrande>2</num_ubi_egrande><des_canal>TRANSPORTE</des_canal><det_canal>CITYPAQ CEPSA</det_canal><observaciones>CITYPAQ - CT POR BAJA EN LA LINEA POR ERROR 16/02/2022 HASTA 23/02/2022</observaciones><ind_admision>N</ind_admision><ind_horario>0</ind_horario><coorXETRS89>447647.75</coorXETRS89><coorYETRS89>4478781.5</coorYETRS89><coorXWGS84>-402693.5</coorXWGS84><coorYWGS84>4932730.0</coorYWGS84><latitudETRS89>40.458054</latitudETRS89><longitudETRS89>-3.6174572</longitudETRS89><latitudWGS84>40.458054</latitudWGS84><longitudWGS84>-3.6174572</longitudWGS84></homePaq><homePaq><cod_homepaq>A0001127D</cod_homepaq><id_fabricante>10164058</id_fabricante><nom_fabricante>Azkoyen</nom_fabricante><modelo>1ESBOX1M00000</modelo><fec_instalacion>2017-10-17 00:00:00.0</fec_instalacion><fec_alta>2017-10-26 00:00:00.0</fec_alta><tipo_homepaq>D</tipo_homepaq><cod_estado>2</cod_estado><des_via>CAMINO</des_via><direccion>CUARTEL</direccion><numero>4</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2807900010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28042</cod_postal><num_modulos>3</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>6</num_ubi_pequeno><num_ubi_mediano>6</num_ubi_mediano><num_ubi_grande>3</num_ubi_grande><num_ubi_egrande>3</num_ubi_egrande><des_canal>SERVICIO</des_canal><det_canal>CITYPAQ PABELLON GUARDIA CIVIL</det_canal><observaciones xsi:nil="true"/><ind_admision xsi:nil="true"/><ind_horario>1</ind_horario><coorXETRS89>451402.3</coorXETRS89><coorYETRS89>4480626.0</coorYETRS89><coorXWGS84>-397779.94</coorXWGS84><coorYWGS84>4935195.0</coorYWGS84><latitudETRS89>40.474895</latitudETRS89><longitudETRS89>-3.573318</longitudETRS89><latitudWGS84>40.474895</latitudWGS84><longitudWGS84>-3.573318</longitudWGS84></homePaq><homePaq><cod_homepaq>A0002389D</cod_homepaq><id_fabricante>10176570</id_fabricante><nom_fabricante>Azkoyen</nom_fabricante><modelo>1ESBOX1M00000</modelo><fec_instalacion>2017-12-15 00:00:00.0</fec_instalacion><fec_alta>2017-12-27 00:00:00.0</fec_alta><tipo_homepaq>D</tipo_homepaq><cod_estado>2</cod_estado><des_via>CALLE</des_via><direccion>RIBERA DEL LOIRA</direccion><numero>8-10</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2807900010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28042</cod_postal><num_modulos>3</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>6</num_ubi_pequeno><num_ubi_mediano>6</num_ubi_mediano><num_ubi_grande>3</num_ubi_grande><num_ubi_egrande>3</num_ubi_egrande><des_canal>CENTRO DE TRABAJO</des_canal><det_canal>CITYPAQ MONTHISA CENTRO DE TRABAJO</det_canal><observaciones xsi:nil="true"/><ind_admision xsi:nil="true"/><ind_horario>1</ind_horario><coorXETRS89>446962.8</coorXETRS89><coorYETRS89>4479827.5</coorYETRS89><coorXWGS84>-403602.44</coorXWGS84><coorYWGS84>4934102.5</coorYWGS84><latitudETRS89>40.467434</latitudETRS89><longitudETRS89>-3.6256223</longitudETRS89><latitudWGS84>40.467434</latitudWGS84><longitudWGS84>-3.6256223</longitudWGS84></homePaq><homePaq><cod_homepaq>S0001722D</cod_homepaq><id_fabricante>HPRLC0163701738</id_fabricante><nom_fabricante>Sermicro</nom_fabricante><modelo>RDECHP0100</modelo><fec_instalacion>2018-04-02 00:00:00.0</fec_instalacion><fec_alta>2018-04-20 00:00:00.0</fec_alta><tipo_homepaq>P</tipo_homepaq><cod_estado>2</cod_estado><des_via>AVENIDA</des_via><direccion>CANTABRIA</direccion><numero>17</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2807900010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28042</cod_postal><num_modulos>1</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>2</num_ubi_pequeno><num_ubi_mediano>2</num_ubi_mediano><num_ubi_grande>1</num_ubi_grande><num_ubi_egrande>1</num_ubi_egrande><des_canal>COMERCIO</des_canal><det_canal>CITYPAQ VIDEOCLUB ALFIL</det_canal><observaciones xsi:nil="true"/><ind_admision>S</ind_admision><ind_horario>1</ind_horario><coorXETRS89>450154.72</coorXETRS89><coorYETRS89>4478393.0</coorYETRS89><coorXWGS84>-399398.75</coorXWGS84><coorYWGS84>4932240.5</coorYWGS84><latitudETRS89>40.454704</latitudETRS89><longitudETRS89>-3.58786</longitudETRS89><latitudWGS84>40.454704</latitudWGS84><longitudWGS84>-3.58786</longitudWGS84></homePaq><homePaq><cod_homepaq>A0003392D</cod_homepaq><id_fabricante>10184186</id_fabricante><nom_fabricante>Azkoyen</nom_fabricante><modelo>1ESBOX1M00000</modelo><fec_instalacion>2017-12-05 00:00:00.0</fec_instalacion><fec_alta>2017-12-19 00:00:00.0</fec_alta><tipo_homepaq>D</tipo_homepaq><cod_estado>2</cod_estado><des_via>AVENIDA</des_via><direccion>VEGA (DE LA)</direccion><numero>2</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2800600010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28108</cod_postal><num_modulos>5</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>10</num_ubi_pequeno><num_ubi_mediano>10</num_ubi_mediano><num_ubi_grande>5</num_ubi_grande><num_ubi_egrande>5</num_ubi_egrande><des_canal>CENTRO DE TRABAJO</des_canal><det_canal>CITYPAQ LEROY MERLIN CENTRO DE TRABAJO</det_canal><observaciones xsi:nil="true"/><ind_admision xsi:nil="true"/><ind_horario>1</ind_horario><coorXETRS89>447058.38</coorXETRS89><coorYETRS89>4487516.5</coorYETRS89><coorXWGS84>-403548.5</coorXWGS84><coorYWGS84>4944243.5</coorYWGS84><latitudETRS89>40.5367</latitudETRS89><longitudETRS89>-3.6251378</longitudETRS89><latitudWGS84>40.5367</latitudWGS84><longitudWGS84>-3.6251378</longitudWGS84></homePaq><homePaq><cod_homepaq>S9000092P</cod_homepaq><id_fabricante>SIN IDENTIFICAR</id_fabricante><nom_fabricante>Sermicro</nom_fabricante><modelo>SRCP</modelo><fec_instalacion>2019-06-14 00:00:00.0</fec_instalacion><fec_alta>2019-06-14 00:00:00.0</fec_alta><tipo_homepaq>D</tipo_homepaq><cod_estado>2</cod_estado><des_via>AVENIDA</des_via><direccion>BRUSELAS (DE)</direccion><numero>36</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2800600010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28108</cod_postal><num_modulos>5</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>14</num_ubi_pequeno><num_ubi_mediano>9</num_ubi_mediano><num_ubi_grande>5</num_ubi_grande><num_ubi_egrande>2</num_ubi_egrande><des_canal>CENTRO DE TRABAJO</des_canal><det_canal>CITYPAQ REALIA CENTRO DE TRABAJO</det_canal><observaciones xsi:nil="true"/><ind_admision xsi:nil="true"/><ind_horario>1</ind_horario><coorXETRS89>445569.72</coorXETRS89><coorYETRS89>4486688.0</coorYETRS89><coorXWGS84>-405497.25</coorXWGS84><coorYWGS84>4943136.5</coorYWGS84><latitudETRS89>40.529144</latitudETRS89><longitudETRS89>-3.6426437</longitudETRS89><latitudWGS84>40.529144</latitudWGS84><longitudWGS84>-3.6426437</longitudWGS84></homePaq><homePaq><cod_homepaq>S0001552D</cod_homepaq><id_fabricante>HPRLC016370959</id_fabricante><nom_fabricante>Sermicro</nom_fabricante><modelo>RDECHP0100</modelo><fec_instalacion>2016-12-20 00:00:00.0</fec_instalacion><fec_alta>2016-12-21 00:00:00.0</fec_alta><tipo_homepaq>P</tipo_homepaq><cod_estado>2</cod_estado><des_via>AVENIDA</des_via><direccion>EUROPA</direccion><numero>8</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2804900010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28821</cod_postal><num_modulos>1</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>2</num_ubi_pequeno><num_ubi_mediano>2</num_ubi_mediano><num_ubi_grande>1</num_ubi_grande><num_ubi_egrande>1</num_ubi_egrande><des_canal>CENTRO DE TRABAJO</des_canal><det_canal>CITYPAQ CORREOS EXPRESS SEDE CENTRAL</det_canal><observaciones>HORARIO LUN-JUE: 08:00-19:00 VIE: 08:00-16:00</observaciones><ind_admision>S</ind_admision><ind_horario>1</ind_horario><coorXETRS89>452483.56</coorXETRS89><coorYETRS89>4476152.5</coorYETRS89><coorXWGS84>-396322.78</coorXWGS84><coorYWGS84>4929308.0</coorYWGS84><latitudETRS89>40.434658</latitudETRS89><longitudETRS89>-3.560228</longitudETRS89><latitudWGS84>40.434658</latitudWGS84><longitudWGS84>-3.560228</longitudWGS84></homePaq><homePaq><cod_homepaq>S0001024D</cod_homepaq><id_fabricante>HPRLC0163701040</id_fabricante><nom_fabricante>Sermicro</nom_fabricante><modelo>RDECHP0100</modelo><fec_instalacion>2017-06-23 00:00:00.0</fec_instalacion><fec_alta>2017-07-03 00:00:00.0</fec_alta><tipo_homepaq>P</tipo_homepaq><cod_estado>2</cod_estado><des_via>AVENIDA</des_via><direccion>ESPA&#209;A (DE)</direccion><numero>34</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2804900010100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28821</cod_postal><num_modulos>1</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>2</num_ubi_pequeno><num_ubi_mediano>2</num_ubi_mediano><num_ubi_grande>1</num_ubi_grande><num_ubi_egrande>1</num_ubi_egrande><des_canal>TRANSPORTE</des_canal><det_canal>CITYPAQ CEPSA</det_canal><observaciones xsi:nil="true"/><ind_admision>N</ind_admision><ind_horario>1</ind_horario><coorXETRS89>452076.53</coorXETRS89><coorYETRS89>4474713.5</coorYETRS89><coorXWGS84>-396844.9</coorXWGS84><coorYWGS84>4927409.0</coorYWGS84><latitudETRS89>40.42167</latitudETRS89><longitudETRS89>-3.5649183</longitudETRS89><latitudWGS84>40.42167</latitudWGS84><longitudWGS84>-3.5649183</longitudWGS84></homePaq><homePaq><cod_homepaq>S9000044P</cod_homepaq><id_fabricante>UC2017V100084</id_fabricante><nom_fabricante>Sermicro</nom_fabricante><modelo>SRCP</modelo><fec_instalacion>2018-08-09 00:00:00.0</fec_instalacion><fec_alta>2018-08-03 00:00:00.0</fec_alta><tipo_homepaq>D</tipo_homepaq><cod_estado>2</cod_estado><des_via>CALLE</des_via><direccion>MAR EGEO (DEL)</direccion><numero>4</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2813000020100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28830</cod_postal><num_modulos>3</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>8</num_ubi_pequeno><num_ubi_mediano>5</num_ubi_mediano><num_ubi_grande>3</num_ubi_grande><num_ubi_egrande>1</num_ubi_egrande><des_canal>CENTRO DE TRABAJO</des_canal><det_canal>CITYPAQ INDRA CENTRO DE TRABAJO</det_canal><observaciones>MP2017V100136/MG2017V100245</observaciones><ind_admision xsi:nil="true"/><ind_horario>1</ind_horario><coorXETRS89>457670.66</coorXETRS89><coorYETRS89>4478723.5</coorYETRS89><coorXWGS84>-389534.16</coorXWGS84><coorYWGS84>4932737.0</coorYWGS84><latitudETRS89>40.4581</latitudETRS89><longitudETRS89>-3.499245</longitudETRS89><latitudWGS84>40.4581</latitudWGS84><longitudWGS84>-3.499245</longitudWGS84></homePaq><homePaq><cod_homepaq>S2000390D</cod_homepaq><id_fabricante>HPRLC016230406 </id_fabricante><nom_fabricante>Sermicro</nom_fabricante><modelo>RDECHP0100</modelo><fec_instalacion>2022-02-21 00:00:00.0</fec_instalacion><fec_alta>2022-02-22 00:00:00.0</fec_alta><tipo_homepaq>P</tipo_homepaq><cod_estado>2</cod_estado><des_via>CALLE</des_via><direccion>VALLE DE LA FUENTE GRANDE</direccion><numero>1-3</numero><portal xsi:nil="true"/><bloque xsi:nil="true"/><escalera xsi:nil="true"/><cod_localidad>2810400020100</cod_localidad><cod_provincia>28</cod_provincia><cod_postal>28860</cod_postal><num_modulos>3</num_modulos><num_ubi__muy_pequeno>0</num_ubi__muy_pequeno><num_ubi_pequeno>6</num_ubi_pequeno><num_ubi_mediano>6</num_ubi_mediano><num_ubi_grande>3</num_ubi_grande><num_ubi_egrande>3</num_ubi_egrande><des_canal>OFICINA POSTAL</des_canal><det_canal>CITYPAQ CORREOS PARACUELLOS DE JARAMA</det_canal><observaciones xsi:nil="true"/><ind_admision>S</ind_admision><ind_horario>1</ind_horario><coorXETRS89>455205.12</coorXETRS89><coorYETRS89>4484027.5</coorYETRS89><coorXWGS84>-392812.84</coorXWGS84><coorYWGS84>4939711.5</coorYWGS84><latitudETRS89>40.505753</latitudETRS89><longitudETRS89>-3.5286977</longitudETRS89><latitudWGS84>40.505753</latitudWGS84><longitudWGS84>-3.5286977</longitudWGS84></homePaq><error xsi:type="xsd:int">0</error></listaHomePaq></homePaqRespuesta></soapenv:Body></soapenv:Envelope>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>abr 25, 2022 09:51:25 p. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>abr 25, 2022 09:51:30 p. m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"API TEST":4.34
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 8,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

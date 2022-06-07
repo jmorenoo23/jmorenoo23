@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ejb="http://ejb.mauo.correos.es">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ejb:homePaqConsultaTAP1>
+          <ejb:cod_homepaq>B0000008P</ejb:cod_homepaq>
+      </ejb:homePaqConsultaTAP1>
+   </soapenv:Body>
+</soapenv:Envelope>

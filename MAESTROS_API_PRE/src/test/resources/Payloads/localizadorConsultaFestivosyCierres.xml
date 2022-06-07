@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ejb="http://ejb.mauo.correos.es">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ejb:codiredCierreConsulta>
+         <ejb:Codired>2800010</ejb:Codired>
+         <ejb:fechaDesde>09/08/2020</ejb:fechaDesde>
+         <ejb:fechaHasta>31/12/2020</ejb:fechaHasta>
+      </ejb:codiredCierreConsulta>
+   </soapenv:Body>
+</soapenv:Envelope>
